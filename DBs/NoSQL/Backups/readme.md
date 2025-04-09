@@ -11,3 +11,14 @@ Cada respaldo puede ser:
 - `Partial`: Contiene únicamente colecciones/tables específicas (como empleados, asistencias, etc.).
 
 Los respaldos aseguran la integridad y disponibilidad de la información en caso de fallas del sistema o pérdidas de datos.
+
+---
+
+### 👥 Colaboradores
+
+| Nombre                        | Rol                          | Usuario               |  
+|-------------------------------|------------------------------|-----------------------|  
+| Jose Luis Campos Marquez      | Desarrollador Backend        | JoseLuisCM663         |  
+| Juan Alberto Vazquez Hernandez | Desarrollador Frontend       | juuaaann456           |  
+| Omar Lemuel Espejel Lira       | Desarrollador Database       | lemuel-26             |  
+| Luis Angel Negrete Maldonado   | CEO y Documentador           | Angelmald0213         |  
