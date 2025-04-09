@@ -7,3 +7,14 @@ Estos respaldos pueden ser:
 - **Parciales**: Incluyen únicamente tablas específicas (empleados, asistencia, etc.).
 
 Los archivos permiten restaurar rápidamente el sistema en caso de fallos o migraciones.
+
+---
+
+### 👥 Colaboradores
+
+| Nombre                        | Rol                          | Usuario               |  
+|-------------------------------|------------------------------|-----------------------|  
+| Jose Luis Campos Marquez      | Desarrollador Backend        | JoseLuisCM663         |  
+| Juan Alberto Vazquez Hernandez | Desarrollador Frontend       | juuaaann456           |  
+| Omar Lemuel Espejel Lira       | Desarrollador Database       | lemuel-26             |  
+| Luis Angel Negrete Maldonado   | CEO y Documentador           | Angelmald0213         |  
