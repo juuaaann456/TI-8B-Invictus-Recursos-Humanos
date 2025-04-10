@@ -7,11 +7,15 @@ Estos respaldos se realizan en momentos clave para garantizar un punto de restau
 
 ---
 
-### 👥 Colaboradores
+## 👥 *Equipo de Desarrollo*
 
-| Nombre                        | Rol                          | Usuario               |  
-|-------------------------------|------------------------------|-----------------------|  
-| Jose Luis Campos Marquez      | Desarrollador Backend        | JoseLuisCM663         |  
-| Juan Alberto Vazquez Hernandez | Desarrollador Frontend       | juuaaann456           |  
-| Omar Lemuel Espejel Lira       | Desarrollador Database       | lemuel-26             |  
-| Luis Angel Negrete Maldonado   | CEO y Documentador           | Angelmald0213         |  
+| Integrantes                   | Contacto                                                   | Rol                      | Observaciones |
+| ----------------------------- | ---------------------------------------------------------- | ------------------------ | ------------- |
+| *Luis Angel Maldonado Negrete*    | [@Angelmald0213](https://github.com/Angelmald0213)                     | CEO y Documentador | ...           |
+| *José Luis Campos Marquez* | [@JoseLuisCM663](https://github.com/JoseLuisCM663)             | Desarrollador Backend             | ...           |
+| *Juan Alberto Vázquez Hernández*   | [@juuaaann456](https://github.com/MRVargas19)               | Desarrollador FrontEnd             | ...           |
+| *Omar Lemuel Espejel Lira* | [@lemuel-26](https://github.com/lemuel-26) | Desarrollador Database   | ...           |
+
+
+Creado por: [@Angelmald0213](https://github.com/Angelmald0213).
+Diseño actualizado por: [@juuaaann456](https://github.com/juuaaann456). 
