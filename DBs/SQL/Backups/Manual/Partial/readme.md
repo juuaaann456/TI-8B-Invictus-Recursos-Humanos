@@ -1,11 +1,37 @@
 # Respaldos Parciales Manuales - SQL
 
-Contiene respaldos manuales de tablas individuales o subconjuntos de datos del sistema.
+La carpeta **Partial**  contiene respaldos hechos manualmente por el usuario, seleccionando solo partes específicas de la base de datos para respaldar. Es muy útil cuando la base de datos es grande y hacer un backup completo (FULL) tomaría mucho tiempo y espacio.
 
 Usados generalmente para:
 - Proteger información crítica antes de hacer pruebas
 - Exportar registros de empleados o nómina
 - Compartir información controlada entre departamentos
+
+---
+
+## 📁 **Estructura de Archivos**
+**Proyecto Integrador Gym (Recursos Humanos)**
+
+```plaintext
+├── DBs
+│   ├── **SQL**
+│   │   ├── **Backups**
+│   │   │   ├── Automated
+│   │   │   └── **Manual**
+│   │   │       ├── Full
+│   │   │       └── **Partial**
+│   │   ├── DataDictionary
+│   │   ├── Diagrams
+│   │   ├── Events
+│   │   ├── Queries
+│   │   ├── Scripts
+│   │   └── Triggers
+│   └── NoSQL
+├── Deliverables
+├── Docs
+├── Prototype
+└── QA
+```
 
 ---
 
