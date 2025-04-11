@@ -1,9 +1,32 @@
 # Respaldos Completos Manuales - SQL
 
-Aquí se almacenan copias completas generadas manualmente de toda la base de datos SQL del sistema de Recursos Humanos.
+La carpeta **Full** manual en SQL contiene copias completas de todos los datos y objetos de la base de datos hechas manualmente por el usuario, sin utilizar sistemas automáticos. Este tipo de respaldo es útil cuando necesitas controlar directamente el momento del respaldo, como antes de realizar actualizaciones importantes o tareas delicadas en la base de datos.
 
-Estos respaldos se realizan en momentos clave para garantizar un punto de restauración seguro y controlado.
+---
 
+## 📁 **Estructura de Archivos**
+**Proyecto Integrador Gym (Recursos Humanos)**
+
+```plaintext
+├── DBs
+│   ├── **SQL**
+│   │   ├── **Backups**
+│   │   │   ├── Automated
+│   │   │   └── **Manual**
+│   │   │       ├── **Full**
+│   │   │       └── Partial
+│   │   ├── DataDictionary
+│   │   ├── Diagrams
+│   │   ├── Events
+│   │   ├── Queries
+│   │   ├── Scripts
+│   │   └── Triggers
+│   └── NoSQL
+├── Deliverables
+├── Docs
+├── Prototype
+└── QA
+```
 
 ---
 
