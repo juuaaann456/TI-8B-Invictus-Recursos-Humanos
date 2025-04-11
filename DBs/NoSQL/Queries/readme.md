@@ -1,5 +1,7 @@
 # Consultas
 
+La carpeta **Queries** contiene consultas para recuperar, actualizar o eliminar datos en la base de datos NoSQL. Estas consultas están optimizadas para mejorar el rendimiento y cumplir con los requisitos del sistema.
+
 Contiene ejemplos de consultas utilizadas en el módulo de Recursos Humanos para extraer información útil, como:
 
 - Listado de empleados activos.
@@ -8,6 +10,26 @@ Contiene ejemplos de consultas utilizadas en el módulo de Recursos Humanos para
 - Contratos por vencer.
 
 Estas consultas están optimizadas para trabajar con bases de datos NoSQL.
+
+---
+
+## 📁 **Estructura de Archivos**
+**Proyecto Integrador Gym (Recursos Humanos)**
+
+```plaintext
+├── DBs
+│   └── NoSQL
+│       ├── Backups
+│       ├── Diagrams
+│       ├── Models
+│       ├── **Queries**
+│       ├── Schemas
+│       └── Scripts
+├── Deliverables
+├── Docs
+├── Prototypes
+├── QA
+```
 
 ---
 ## 👥 *Equipo de Desarrollo*
