@@ -1,13 +1,28 @@
 # Diagramas
 
-Contiene diagramas visuales que representan el diseño del módulo de Recursos Humanos del gimnasio.
-
-Incluye:
-- Diagramas de Entidad-Relación (MER).
-- Diagramas de flujo para procesos como contratación, control de asistencias y gestión de nómina.
-- Estructura lógica de la base de datos.
+Contiene diagramas visuales que representan el diseño del módulo de Recursos Humanos del gimnasio. Estos diagramas son útiles para comprender cómo se organiza la información, cómo interactúan los diferentes componentes del sistema y cómo fluyen los datos a través del sistema, facilitando la visualización y el análisis de la arquitectura general.
 
 Estos diagramas son útiles para desarrolladores, analistas y partes interesadas.
+
+---
+
+## 📁 **Estructura de Archivos**
+**Proyecto Integrador Gym (Recursos Humanos)**
+
+```plaintext
+├── DBs
+│   └── NoSQL
+│       ├── **Diagrams**
+│       ├── Backups
+│       ├── Models
+│       ├── Queries
+│       ├── Schemas
+│       └── Scripts
+├── Deliverables
+├── Docs
+├── Prototypes
+├── QA
+```
 
 ---
 ## 👥 *Equipo de Desarrollo*
