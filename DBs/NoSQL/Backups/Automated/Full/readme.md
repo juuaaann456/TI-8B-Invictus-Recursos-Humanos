@@ -1,6 +1,6 @@
 # Respaldos Completos Automatizados
 
-Aquí se almacenan los respaldos automáticos completos de toda la base de datos de Recursos Humanos.
+Contiene respaldos automáticos completos de la base de datos NoSQL. Estas copias incluyen todas las colecciones y datos, y se generan regularmente según un horario establecido.
 
 Se programan a intervalos regulares para asegurar la integridad total del sistema ante eventos críticos.
 
@@ -9,6 +9,24 @@ Incluye todas las colecciones relacionadas con:
 - Control de asistencia
 - Procesos de contratación
 - Nómina y evaluaciones
+
+---
+
+## 📁 **Estructura de Archivos**
+**Proyecto Integrador Gym (Recursos Humanos)**
+```plaintext
+├── DBs
+│   ├── NoSQL
+│   │   ├── Backups
+│   │   │   ├── Automated
+│   │   │   │   ├── **Full**
+│   │   │   │   ├── Partial
+│   │   │   ├── Manual
+├── Deliverables
+├── Docs
+├── Prototypes
+├── QA
+```
 
 ---
 
