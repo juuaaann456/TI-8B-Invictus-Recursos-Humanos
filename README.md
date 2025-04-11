@@ -86,11 +86,6 @@ Desarrollar e implementar un módulo integral de gestión de personal para Gym B
 
 ---
 
-### 📊 DIAGRAMA DE WBS
-
-
-
----
 
 ### 🛠️ Tecnologías Utilizadas  
 
