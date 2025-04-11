@@ -1,12 +1,36 @@
 # Respaldos Automatizados - SQL
 
-Este directorio contiene respaldos generados automáticamente desde la base de datos SQL del módulo de Recursos Humanos.
-
-Los respaldos se ejecutan en intervalos programados mediante tareas automatizadas (cronjobs, scripts, etc.), garantizando la disponibilidad de copias recientes de los datos.
+La carpeta **Automated** sirve para almacenar la configuración del sistema que realiza automáticamente las copias de seguridad. De esta manera, el respaldo de datos ocurre de forma periódica y automática según un horario establecido previamente. Esto ayuda a proteger la información, evitando pérdidas accidentales sin necesidad de intervención manual.
 
 Incluye:
 - Respaldos completos (`/Full`)
 - Respaldos parciales por tablas (`/Partial`)
+
+---
+
+## 📁 **Estructura de Archivos**
+**Proyecto Integrador Gym (Servicio al Cliente)**
+
+```plaintext
+├── DBs
+│   ├── **SQL**
+│   │   ├── **Backups**
+│   │   │   ├── **Automated**
+│   │   │   │   ├── Full
+│   │   │   │   └── Partial
+│   │   │   └── Manual
+│   │   ├── DataDictionary
+│   │   ├── Diagrams
+│   │   ├── Events
+│   │   ├── Queries
+│   │   ├── Scripts
+│   │   └── Triggers
+│   └── NoSQL
+├── Deliverables
+├── Docs
+├── Prototype
+└── QA
+```
 
 ---
 
