@@ -1,12 +1,28 @@
 # Backups Manuales
 
-Respaldos realizados de forma manual por el personal autorizado.
+Este directorio (**Manual**) contiene **copias de seguridad realizadas manualmente** de la base de datos NoSQL. Estas copias pueden ser **completas o parciales**, según las necesidades del equipo. Los respaldos manuales permiten un control total sobre el proceso, y se utilizan cuando se desea realizar un respaldo en un momento específico antes de efectuar cambios importantes en el sistema o cuando solo se necesita proteger una parte concreta de la base de datos.
 
 Se recomienda utilizar esta opción antes de aplicar cambios mayores al sistema, como migraciones, actualizaciones o integraciones externas.
 
 Subdirectorios:
 - `Full`: Respaldo completo del módulo de Recursos Humanos.
 - `Partial`: Respaldo parcial de ciertas entidades clave.
+
+---
+
+## 📁 **Estructura de Archivos**
+**Proyecto Integrador Gym (Recursos Humanos)**
+```plaintext
+├── DBs
+│   ├── NoSQL
+│   │   ├── Backups
+│   │   │   ├── Automated
+│   │   │   ├── **Manual**
+├── Deliverables
+├── Docs
+├── Prototypes
+└── QA
+```
 
 ---
 
