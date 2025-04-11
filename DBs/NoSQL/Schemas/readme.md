@@ -1,6 +1,6 @@
 # Esquemas (Schemas)
 
-Este directorio contiene los esquemas de validación utilizados en la base de datos NoSQL para estructurar los documentos del módulo de Recursos Humanos.
+La carpeta **Schemas** almacena esquemas de validación para estructurar y verificar los datos antes de guardarlos en la base de datos NoSQL. Estos esquemas garantizan la integridad y evitan errores de validación..
 
 Cada esquema define:
 - Los campos permitidos en cada colección.
@@ -8,6 +8,26 @@ Cada esquema define:
 - Restricciones y validaciones (campos obligatorios, valores únicos, formatos).
 
 Los esquemas ayudan a mantener la integridad de los datos, facilitando la consistencia y escalabilidad del sistema.
+
+---
+
+## 📁 **Estructura de Archivos**
+**Proyecto Integrador Gym (Recursos Humanos)**
+
+```plaintext
+├── DBs
+│   └── NoSQL
+│       ├── Backups
+│       ├── Diagrams
+│       ├── Models
+│       ├── Queries
+│       ├── **Schemas**
+│       └── Scripts
+├── Deliverables
+├── Docs
+├── Prototypes
+├── QA
+```
 
 ---
 
