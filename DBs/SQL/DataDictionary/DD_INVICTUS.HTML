@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="WB DataDic" />
+    <meta name="description" content="gymin Data Dictionary." />
+    <title>gymin Data Dictionary</title>
+    <style type="text/css">
+    table{
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    abbr{
+        cursor: help;
+    }
+    table, td, th{
+        border-style: solid;
+        border-width: 1px;
+    }
+    table caption{
+        font-size: 120%;
+        font-weight: bold;
+    }
+    caption{
+        color: black;
+    }
+    td, th{
+        border-color: silver;
+    }
+    tr:hover{
+        color: #333;
+        background-color: #F2F2F2;
+    }
+    th{
+        background-color: silver;
+    }
+    td{
+        color: gray;
+    }
+    ul{
+        font-style: italic;
+    }
+    #title-sect{
+        color: gray;
+        text-align: right;
+    }
+    .proj-desc{
+        text-align: right;
+    }
+    </style>
+</head>
+<body>
+<div id="title-sect">
+<h1>gymin<br> Data Dictionay</h1>
+<p>
+<em>2025-04-10</em>
+</p>
+<p class="proj-desc">
+<em></em>
+</p>
+</div>
+<h2>Alphabetic Index</h2>
+<ul>
+<li><a href='#tbb_areas'>tbb_areas</a></li>
+<li><a href='#tbb_colaboradores'>tbb_colaboradores</a></li>
+<li><a href='#tbb_horarios'>tbb_horarios</a></li>
+<li><a href='#tbd_quejas_sugerencias'>tbd_quejas_sugerencias</a></li>
+</ul>
+<table id='tbb_areas'>
+<caption>tbb_areas</caption>
+<tr><td colspan='11'>Descripción: Clasificación o agrupación que organiza elementos relacionados dentro del sistema según características compartidas.\nTipo naturaleza: Conceptual\nTipo nivel dependencia: Débil</td></tr>
+<tr>
+    <th>Column name</th>
+    <th>DataType</th>
+    <th><abbr title='Primary Key'>PK</abbr></th>
+    <th><abbr title='Not Null'>NN</abbr></th>
+    <th><abbr title='Unique'>UQ</abbr></th>
+    <th><abbr title='Binary'>BIN</abbr></th>
+    <th><abbr title='Unsigned'>UN</abbr></th>
+    <th><abbr title='Zero Fill'>ZF</abbr></th>
+    <th><abbr title='Auto Increment'>AI</abbr></th>
+    <th>Default</th>
+    <th>Comment</th>
+</tr>
+<tr>
+    <td>ID</td>
+    <td>INT</td>
+    <td>&#10004;</td>
+    <td>&#10004;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&#10004;</td>
+    <td></td>
+    <td>Identificador unico auto-incremental para cada registro en la tabla.	\\\\\\\\n\\\\\\\\nTipo: Entero	\\\\\\\\n\\\\\\\\nDominio: Numeros enteros positivos	\\\\\\\\n\\\\\\\\nComposicion: 1{0-9}*</td>
+</tr>
+<tr>
+    <td>Nombre</td>
+    <td>VARCHAR(80)</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td class='attr'>&nbsp;</td>
+    <td>NULL</td>
+    <td>Nombre de la persona, almacenado en una cadena de caracteres de longitud maxima de 80 caracteres.\\nTipo: Cadena de caracteres\\nDominio: Cadena de caracteres con longitud maxima de 80 caracteres\\nComposicion: [A-Za-z0-9_ -./()]{1,80}</td>
+</tr>
+<tr>
+    <td>Descripcion</td>
+    <td>TEXT</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td class='attr'>&nbsp;</td>
+    <td>NULL</td>
+    <td>Descripcion detallada del area, almacenada en un campo de texto sin limite de longitud.\\nTipo: Texto\\nDominio: Cadena de caracteres de longitud variable\\nComposicion: [A-Za-z0-9_ -./(),nN]{1,}</td>
+</tr>
+<tr>
+    <td>Sucursal_ID</td>
+    <td>INT</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td class='attr'>&nbsp;</td>
+    <td>NULL</td>
+    <td>Identificador de la sucursal asociada con el area.\\nTipo: Entero\\nDominio: Numeros enteros positivos\\nComposicion: 1{0-9}*</td>
+</tr>
+<tr>
+    <td>Estatus</td>
+    <td>TINYINT</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td class='attr'>&nbsp;</td>
+    <td>NULL</td>
+    <td>Estado actual del area, con posibles valores numericos que representan estados especificos.\\nTipo: Entero\\nDominio: Valores enteros desde 0 hasta 255\\nComposicion: 0-255</td>
+</tr>
+<tr>
+    <td>Fecha_Registro</td>
+    <td>DATETIME</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td class='attr'>&nbsp;</td>
+    <td>NULL</td>
+    <td>Fecha en la que se registro el area, almacenada en formato date (AAAA-MM-DD).\\nTipo: Fecha\\nDominio: Fechas validas desde el ano 1900 hasta la fecha actual\\nComposicion: {4-digitos-Ano}-{2-digitos-Mes}-{2-digitos-Dia}</td>
+</tr>
+<tr>
+    <td>Fecha_Actualizacion</td>
+    <td>DATETIME</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td class='attr'>&nbsp;</td>
+    <td>NULL</td>
+    <td>Fecha de la ultima actualizacion de la area, almacenada en formato date (AAAA-MM-DD).\\nTipo: Fecha\\nDominio: Fechas validas desde el ano 1900 hasta la fecha actual\\nComposicion: {4-digitos-Ano}-{2-digitos-Mes}-{2-digitos-Dia}</td>
+</tr>
+<table id='tbb_colaboradores'>
+<caption>tbb_colaboradores</caption>
+<tr><td colspan='11'>Descripcion: Persona que trabaja en el gimnasio, ya sea como instructor, recepcionista, administrador o en otro rol, y que contribuye al funcionamiento y servicios ofrecidos por el gimnasio.\\nTipo naturaleza: Mixta 		Tipo nivel dependencia: Fuerte 		Tipo clasificacion: Entidad  </td></tr>
+<tr>
+    <th>Column name</th>
+    <th>DataType</th>
+    <th><abbr title='Primary Key'>PK</abbr></th>
+    <th><abbr title='Not Null'>NN</abbr></th>
+    <th><abbr title='Unique'>UQ</abbr></th>
+    <th><abbr title='Binary'>BIN</abbr></th>
+    <th><abbr title='Unsigned'>UN</abbr></th>
+    <th><abbr title='Zero Fill'>ZF</abbr></th>
+    <th><abbr title='Auto Increment'>AI</abbr></th>
+    <th>Default</th>
+    <th>Comment</th>
+</tr>
+<tr>
+    <td>ID</td>
+    <td>INT</td>
+    <td>&#10004;</td>
+    <td>&#10004;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&#10004;</td>
+    <td></td>
+    <td>Identificador unico auto-incremental para cada registro en la tabla.	\\\\n\\\\nTipo: Entero	\\\\n\\\\nDominio: Numeros enteros positivos	\\\\n\\\\nComposicion: 1{0-9}*</td>
+</tr>
+<tr>
+    <td>Usuario_Roles_ID</td>
+    <td>INT</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td class='attr'>&nbsp;</td>
+    <td>NULL</td>
+    <td>Descripción: Identificador que representa el rol asignado a un usuario dentro del sistema (por ejemplo, administrador, recepcionista, entrenador).\nTipo: Entero (Integer)\nDominio: Números enteros positivos correspondientes a roles predefinidos en el catálogo de roles\nComposición: {1–3 dígitos}\nRestricciones: Valor requerido, debe existir en la tabla de roles. No se permiten valores negativos ni nulos.</td>
+</tr>
+<tr>
+    <td>Horario_ID</td>
+    <td>INT</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td class='attr'>&nbsp;</td>
+    <td>NULL</td>
+    <td>Descripción: Horario de trabajo del colaborador dentro del gimnasio, almacenada en formato datetime (AAAA-MM-DD HH:mm:ss).\\\\nTipo: DateTime\\\\nDominio: Fecha/hora valida desde el ano 1900 hasta la fecha actual\\\\nComposicion: {4-digitos-Ano}{2-digitos-Mes}{2-digitos-Dia} {space} {2-digitos-Hora}:{2-digitos-Minutos}:{2-digitos-Segundos} (UTC)</td>
+</tr>
+<tr>
+    <td>Especialidad</td>
+    <td>VARCHAR(50)</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td class='attr'>&nbsp;</td>
+    <td>NULL</td>
+    <td>Descripción: Área de conocimiento, disciplina o tipo de actividad física que domina un colaborador dentro del gimnasio.\nTipo: Catálogo\nDominio: Texto alfabético representando una disciplina válida (ej. Yoga, CrossFit, Spinning)\nComposición: {Texto}{Espacio opcional}{Texto} (máx. 100 caracteres)\nRestricciones: Valor único, sin caracteres especiales inválidos. Puede contener letras, espacios y acentos.</td>
+</tr>
+<tr>
+    <td>Estatus</td>
+    <td>TINYINT(1)</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td class='attr'>&nbsp;</td>
+    <td>NULL</td>
+    <td>Estado actual del colaborador,almacenado como un valor binario.\\\\nTipo: Binario\\\\nDominio: Valores binarios (0 o 1)\\\\nComposicion: b\\\\\\\\'0\\\\\\\\' o b\\\\\\\\'1\\\\\\\\'</td>
+</tr>
+<tr>
+    <td>Fecha_Registro</td>
+    <td>DATETIME</td>
+    <td>&nbsp;</td>
+    <td>&#10004;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td class='attr'>&nbsp;</td>
+    <td></td>
+    <td>Fecha en la que se registro el colaborador en el sistema, almacenada en formato date (AAAA-MM-DD).	\\\\\\\\n\\\\\\\\nTipo: Fecha	\\\\\\\\n\\\\\\\\nDominio: Fechas validas desde el ano 1900 hasta la fecha actual	\\\\\\\\n\\\\\\\\nComposicion: {4-digitos-Ano}-{2-digitos-Mes}-{2-digitos-Dia}</td>
+</tr>
+<tr>
+    <td>Fecha_Actualizacion</td>
+    <td>DATETIME</td>
+    <td>&nbsp;</td>
+    <td>&#10004;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td class='attr'>&nbsp;</td>
+    <td></td>
+    <td>Fecha de la ultima actualizacion del colaborador, almacenada en formato date (AAAA-MM-DD).	\\\\\\\\n\\\\\\\\nTipo: Fecha	\\\\\\\\n\\\\\\\\nDominio: Fechas validas desde el ano 1900 hasta la fecha actual	\\\\\\\\n\\\\\\\\nComposicion: {4-digitos-Ano}-{2-digitos-Mes}-{2-digitos-Dia}</td>
+</tr>
+<table id='tbb_horarios'>
+<caption>tbb_horarios</caption>
+<tr><td colspan='11'>DESCRIPCION: Conjunto de tiempos o periodos especificos en los que se planifican y organizan actividades, citas o eventos dentro del Gym.\\nTIPO NATURALEZA: Conceptual\\nTIPO NIVEL DEPENDENCIA: Debil\\nTIPO CLASIFICACION: Generica</td></tr>
+<tr>
+    <th>Column name</th>
+    <th>DataType</th>
+    <th><abbr title='Primary Key'>PK</abbr></th>
+    <th><abbr title='Not Null'>NN</abbr></th>
+    <th><abbr title='Unique'>UQ</abbr></th>
+    <th><abbr title='Binary'>BIN</abbr></th>
+    <th><abbr title='Unsigned'>UN</abbr></th>
+    <th><abbr title='Zero Fill'>ZF</abbr></th>
+    <th><abbr title='Auto Increment'>AI</abbr></th>
+    <th>Default</th>
+    <th>Comment</th>
+</tr>
+<tr>
+    <td>ID</td>
+    <td>INT</td>
+    <td>&#10004;</td>
+    <td>&#10004;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&#10004;</td>
+    <td></td>
+    <td>Identificador unico auto-incremental para cada registro en la tabla.\\nTipo: Entero\\nDominio: Numeros enteros positivos\\nComposicion: 1{0-9}*</td>
+</tr>
+<tr>
+    <td>Tipo</td>
+    <td>ENUM('matutino', 'vespertino', 'especial')</td>
+    <td>&nbsp;</td>
+    <td>&#10004;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td class='attr'>&nbsp;</td>
+    <td></td>
+    <td> Estado actual del horario, con posibles valores numéricos que representan estados específicos.  \nTipo: Entero  \nDominio: Valores enteros desde 0 hasta 255  \nComposición: 0-255</td>
+</tr>
+<tr>
+    <td>Hora_Inicio</td>
+    <td>TIME</td>
+    <td>&nbsp;</td>
+    <td>&#10004;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td class='attr'>&nbsp;</td>
+    <td></td>
+    <td>Hora en la que inicia el horario, almacenada en formato time (HH:MM:SS).\\nTipo: Hora\\nDominio: Hora valida en formato de 24 horas\\nComposicion: {2-digitos-Hora}:{2-digitos-Minutos}:{2-digitos-Segundos}</td>
+</tr>
+<tr>
+    <td>Hora_Fin</td>
+    <td>TIME</td>
+    <td>&nbsp;</td>
+    <td>&#10004;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td class='attr'>&nbsp;</td>
+    <td></td>
+    <td>Hora en la que finaliza el horario, almacenada en formato time (HH:MM:SS).\\nTipo: Hora\\nDominio: Hora valida en formato de 24 horas\\nComposicion: {2-digitos-Hora}:{2-digitos-Minutos}:{2-digitos-Segundos}</td>
+</tr>
+<tr>
+    <td>Fecha_Registro</td>
+    <td>DATETIME</td>
+    <td>&nbsp;</td>
+    <td>&#10004;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td class='attr'>&nbsp;</td>
+    <td></td>
+    <td>Fecha y hora en la que se registro el horario, almacenada en formato datetime (AAAA-MM-DD HH:mm:ss).\\nTipo: DateTime\\nDominio: Fecha/hora valida desde el ano 1900 hasta la fecha actual\\nComposicion: {4-digitos-Ano}{2-digitos-Mes}{2-digitos-Dia} {space} {2-digitos-Hora}:{2-digitos-Minutos}:{2-digitos-Segundos} (UTC)</td>
+</tr>
+<tr>
+    <td>Fecha_Actualizacion</td>
+    <td>DATETIME</td>
+    <td>&nbsp;</td>
+    <td>&#10004;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td class='attr'>&nbsp;</td>
+    <td></td>
+    <td>Fecha de la ultima actualizacion del horario, almacenada en formato datetime (AAAA-MM-DD HH:mm:ss).\\nTipo: DateTime\\nDominio: Fecha/hora valida desde el ano 1900 hasta la fecha actual\\nComposicion: {4-digitos-Ano}{2-digitos-Mes}{2-digitos-Dia} {space} {2-digitos-Hora}:{2-digitos-Minutos}:{2-digitos-Segundos} (UTC)</td>
+</tr>
+<tr>
+    <td>Estatus</td>
+    <td>TINYINT</td>
+    <td>&nbsp;</td>
+    <td>&#10004;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td class='attr'>&nbsp;</td>
+    <td></td>
+    <td>Estado actual del horario, con posibles valores numericos que representan estados especificos.\\nTipo: Entero\\nDominio: Valores enteros desde 0 hasta 255\\nComposicion: 0-255</td>
+</tr>
+<table id='tbd_quejas_sugerencias'>
+<caption>tbd_quejas_sugerencias</caption>
+<tr><td colspan='11'>Descripción: Comentarios, quejas o sugerencias proporcionadas por los usuarios o clientes, con el fin de mejorar los servicios, procesos o experiencias en el establecimiento.\\\\nTipo naturaleza: Mixta \\\\nTipo nivel dependencia: Moderada \\\\nTipo clasificación: Entidad\n</td></tr>
+<tr>
+    <th>Column name</th>
+    <th>DataType</th>
+    <th><abbr title='Primary Key'>PK</abbr></th>
+    <th><abbr title='Not Null'>NN</abbr></th>
+    <th><abbr title='Unique'>UQ</abbr></th>
+    <th><abbr title='Binary'>BIN</abbr></th>
+    <th><abbr title='Unsigned'>UN</abbr></th>
+    <th><abbr title='Zero Fill'>ZF</abbr></th>
+    <th><abbr title='Auto Increment'>AI</abbr></th>
+    <th>Default</th>
+    <th>Comment</th>
+</tr>
+<tr>
+    <td>ID</td>
+    <td>INT</td>
+    <td>&#10004;</td>
+    <td>&#10004;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&#10004;</td>
+    <td></td>
+    <td>Identificador unico auto-incremental para cada registro en la tabla.	\\\\\\\\n\\\\\\\\nTipo: Entero	\\\\\\\\n\\\\\\\\nDominio: Numeros enteros positivos	\\\\\\\\n\\\\\\\\nComposicion: 1{0-9}*</td>
+</tr>
+<tr>
+    <td>Usuario_Roles_ID</td>
+    <td>INT</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td class='attr'>&nbsp;</td>
+    <td>NULL</td>
+    <td>Descripción: Identificador que representa el rol asignado a un usuario dentro del sistema (por ejemplo, administrador, recepcionista, entrenador).\\nTipo: Entero (Integer)\\nDominio: Números enteros positivos correspondientes a roles predefinidos en el catálogo de roles\\nComposición: {1–3 dígitos}\\nRestricciones: Valor requerido, debe existir en la tabla de roles. No se permiten valores negativos ni nulos.</td>
+</tr>
+<tr>
+    <td>Sucursal_ID</td>
+    <td>INT</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td class='attr'>&nbsp;</td>
+    <td>NULL</td>
+    <td>Identificador de la sucursal asociada con el area.\\\\nTipo: Entero\\\\nDominio: Numeros enteros positivos\\\\nComposicion: 1{0-9}*</td>
+</tr>
+<tr>
+    <td>Descripcion</td>
+    <td>TEXT</td>
+    <td>&nbsp;</td>
+    <td>&#10004;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td class='attr'>&nbsp;</td>
+    <td></td>
+    <td>Descripcion detallada de la queja, almacenada en un campo de texto sin limite de longitud.\\\\nTipo: Texto\\\\nDominio: Cadena de caracteres de longitud variable\\\\nComposicion: [A-Za-z0-9_ -./(),nN]{1,}</td>
+</tr>
+<tr>
+    <td>Tipo</td>
+    <td>ENUM('sugerencia', 'queja', 'reclamo')</td>
+    <td>&nbsp;</td>
+    <td>&#10004;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td class='attr'>&nbsp;</td>
+    <td></td>
+    <td>Estado actual de la queja, con posibles valores numéricos que representan estados específicos. \\nTipo: ENUM \\nDominio: Valores ('sugerencia', 'queja', 'reclamo') \\nComposición: 'sugerencia' - Opinión o recomendación, 'queja' - Expresión de descontento, 'reclamo' - Solicitud formal de resolución.\n</td>
+</tr>
+<tr>
+    <td>Respuesta</td>
+    <td>TEXT</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td class='attr'>&nbsp;</td>
+    <td>NULL</td>
+    <td>Respuesta detallada de la queja, almacenada en un campo de texto sin limite de longitud.\\\\nTipo: Texto\\\\nDominio: Cadena de caracteres de longitud variable\\\\nComposicion: [A-Za-z0-9_ -./(),nN]{1,}</td>
+</tr>
+<tr>
+    <td>Estatus</td>
+    <td>ENUM('respondida', 'pendiente', 'archivada')</td>
+    <td>&nbsp;</td>
+    <td>&#10004;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td class='attr'>&nbsp;</td>
+    <td></td>
+    <td>Estado actual del elemento, con posibles valores que representan diferentes estados de procesamiento o situación. \\nTipo: ENUM \\nDominio: Valores ('pendiente', 'respondida', 'archivada') \\nComposición: 'pendiente' - Aún no se ha iniciado el proceso, 'en proceso' - En fase de revisión o solución, 'resuelto' - El problema o solicitud ha sido atendido, 'cerrado' - Caso finalizado y cerrado.\n</td>
+</tr>
+<tr>
+    <td>Fecha_registro</td>
+    <td>DATETIME</td>
+    <td>&nbsp;</td>
+    <td>&#10004;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td class='attr'>&nbsp;</td>
+    <td></td>
+    <td>Fecha en la que se registro la queja en el sistema, almacenada en formato date (AAAA-MM-DD).	\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\nTipo: Fecha	\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\nDominio: Fechas validas desde el ano 1900 hasta la fecha actual	\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\nComposicion: {4-digitos-Ano}-{2-digitos-Mes}-{2-digitos-Dia}</td>
+</tr>
+<tr>
+    <td>Fecha_actualizacion</td>
+    <td>DATETIME</td>
+    <td>&nbsp;</td>
+    <td>&#10004;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td class='attr'>&nbsp;</td>
+    <td></td>
+    <td>Fecha de la ultima actualizacion de la qiueja, almacenada en formato date (AAAA-MM-DD).	\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\nTipo: Fecha	\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\nDominio: Fechas validas desde el ano 1900 hasta la fecha actual	\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\nComposicion: {4-digitos-Ano}-{2-digitos-Mes}-{2-digitos-Dia}</td>
+</tr>
+</table>
+</body>
+</html>
