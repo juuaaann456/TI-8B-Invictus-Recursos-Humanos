@@ -1,6 +1,6 @@
 # Respaldos Completos Automatizados - SQL
 
-En esta carpeta se almacenan respaldos totales de la base de datos del sistema de Recursos Humanos.
+La carpeta **Full** en SQL contiene copias completas de todos los datos y objetos de la base de datos en un momento específico. Estas copias permiten restaurar fácilmente toda la información en caso de pérdida de datos, corrupción o fallos del sistema.
 
 Cada respaldo incluye:
 - Todas las tablas del sistema
@@ -8,6 +8,32 @@ Cada respaldo incluye:
 - Scripts de restauración
 
 Estos archivos son útiles para restauraciones completas en caso de fallos críticos.
+
+---
+
+## 📁 **Estructura de Archivos**
+**Proyecto Integrador Gym (Recursos Humanos)**
+
+```plaintext
+├── DBs
+│   ├── **SQL**
+│   │   ├── **Backups**
+│   │   │   ├── **Automated**
+│   │   │   │   ├── **Full**
+│   │   │   │   └── Partial
+│   │   │   └── Manual
+│   │   ├── DataDictionary
+│   │   ├── Diagrams
+│   │   ├── Events
+│   │   ├── Queries
+│   │   ├── Scripts
+│   │   └── Triggers
+│   └── NoSQL
+├── Deliverables
+├── Docs
+├── Prototype
+└── QA
+```
 
 ---
 
