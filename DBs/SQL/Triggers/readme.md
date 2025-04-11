@@ -1,6 +1,6 @@
 # Triggers - SQL
 
-Este directorio incluye triggers que se ejecutan automáticamente en respuesta a eventos dentro de las tablas del sistema de Recursos Humanos.
+La carpeta **Triggers** contiene archivos relacionados con los triggers, que son acciones automáticas ejecutadas al insertar, actualizar o borrar datos. Incluye scripts, documentación y ejemplos que ayudan a mantener los datos seguros y consistentes.
 
 Ejemplos:
 - Registrar fecha de modificación de un empleado
@@ -10,6 +10,28 @@ Ejemplos:
 Los triggers ayudan a mantener la integridad y trazabilidad de los datos.
 
 --- 
+
+## 📁 **Estructura de Archivos**
+**Proyecto Integrador Gym (Recursos Humanos)**
+
+```plaintext
+├── DBs
+│   ├── SQL
+│   │   ├── Backups
+│   │   ├── DataDictionary
+│   │   ├── Diagrams
+│   │   ├── Events
+│   │   ├── Queries
+│   │   ├── Scripts
+│   │   └── **Triggers**
+│   └── NoSQL
+├── Deliverables
+├── Docs
+├── Prototype
+└── QA
+```
+
+---
 
 ## 👥 *Equipo de Desarrollo*
 
