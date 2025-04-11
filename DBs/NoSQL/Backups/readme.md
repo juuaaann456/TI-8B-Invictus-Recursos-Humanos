@@ -31,6 +31,7 @@ Los respaldos aseguran la integridad y disponibilidad de la información en caso
 ├── Docs
 ├── Prototypes
 └── QA
+```
 
 ---
 
