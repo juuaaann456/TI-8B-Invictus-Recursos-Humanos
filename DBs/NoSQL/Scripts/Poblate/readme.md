@@ -1,14 +1,29 @@
 # Poblar Base de Datos
 
-Este subdirectorio contiene scripts para poblar la base de datos con información de ejemplo o inicial relacionada con el módulo de Recursos Humanos.
-
-Incluye:
-- Empleados ficticios.
-- Asistencias simuladas.
-- Contratos de muestra.
-- Departamentos y puestos comunes.
+La carpeta Poblate contiene scripts para insertar datos de prueba o iniciales en la base de datos, útiles para pruebas, desarrollo y verificación antes del despliegue en producción.
 
 Estos scripts son útiles para pruebas, demostraciones o validación de funcionalidades del sistema antes de pasar a producción.
+
+---
+
+## 📁 **Estructura de Archivos** 
+**Proyecto Integrador Gym (Recursos Humanos)**
+
+```plaintext
+├── DBs
+│   └── NoSQL
+│       ├── Backups
+│       ├── Diagrams
+│       ├── Models
+│       ├── Queries
+│       ├── Schemas
+│       ├── Scripts
+│       └── **Poblate**
+├── Deliverables
+├── Docs
+├── Prototypes
+├── QA
+```
 
 ---
 
