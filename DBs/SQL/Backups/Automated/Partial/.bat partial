@@ -1,0 +1,80 @@
+@echo off
+:: Encabezado personalizado en ASCII
+echo "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~";
+echo "~ ____  _____ ____  ____   _    _     ____   ___    ~";
+echo "~|  _ \| ____/ ___||  _ \ / \  | |   |  _ \ / _ \   ~";
+echo "~| |_) |  _| \___ \| |_) / _ \ | |   | | | | | | |  ~";
+echo "~|  _ <| |___ ___) |  __/ ___ \| |___| |_| | |_| |  ~";
+echo "~|_|_\_\_____|____/|_|_/_/___\_\_____|____/ \___/   ~";
+echo "~|  _ \ / \  |  _ \ / ___|_ _|  / \  | |            ~";
+echo "~| |_) / _ \ | |_) | |    | |  / _ \ | |      _____ ~";
+echo "~|  __/ ___ \|  _ <| |___ | | / ___ \| |___  |_____|~";
+echo "~|_| /_/   \_\_|_\_\\____|___/_/   \_\_____|        ~";
+echo "~|  \/  |_   _/ ___| / _ \| |                       ~";
+echo "~| |\/| | | | \___ \| | | | |                       ~";
+echo "~| |  | | |_| |___) | |_| | |___                    ~";
+echo "~|_|  |_|\__, |____/ \__\_\_____|                   ~";
+echo "~        |___/                                      ~";
+echo "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~";
+echo  Respaldo Semanal Parcial de Colaboradores
+echo ==============================================
+
+:: Variables de conexión
+set DB_NAME=gymbull
+set DB_USER=root
+set DB_PASSWORD=12345
+set MYSQLDUMP="C:\Program Files\MySQL\MySQL Server 8.0\bin\mysqldump.exe"
+
+:: Variables para la ruta y nombre del archivo
+set BACKUP_DIR=C:\Respaldos
+set TABLE_NAME=tbb_colaboradores
+
+:: Fecha actual
+for /f %%i in ('powershell -command "(Get-Date).ToString(\"yyyy-MM-dd\")"') do set TODAY=%%i
+
+:: Obtener semana del año con PowerShell
+for /f %%i in ('powershell -command "[System.Globalization.CultureInfo]::InvariantCulture.Calendar.GetWeekOfYear((Get-Date), [System.Globalization.CalendarWeekRule]::FirstFourDayWeek, [System.DayOfWeek]::Monday)"') do set WEEK=%%i
+
+:: Crear nombre del archivo de respaldo con número de semana
+set BACKUP_FILE=%BACKUP_DIR%\backup_semana_%WEEK%_%TABLE_NAME%.sql
+
+:: Crear directorio si no existe
+if not exist %BACKUP_DIR% mkdir %BACKUP_DIR%
+
+:: Capturar la hora de inicio
+set START_TIME=%time%
+
+:: Mensaje de inicio
+echo ==============================================
+echo Estado: Iniciando respaldo semanal de la tabla %TABLE_NAME%...
+echo Fecha de Inicio: %date% %START_TIME%
+echo Semana del Año: %WEEK%
+echo ==============================================
+
+:: Respaldo parcial de la tabla con filtro de la semana actual
+%MYSQLDUMP% -u %DB_USER% -p%DB_PASSWORD% -P 3306 %DB_NAME% %TABLE_NAME% --where="WEEK(fecha_ingreso, 1) = %WEEK%" > "%BACKUP_FILE%"
+
+:: Capturar la hora de término
+set END_TIME=%time%
+
+:: Calcular duración
+for /F "tokens=1-4 delims=:.," %%a in ("%START_TIME%") do set /A START_SEC=(((%%a*60)+%%b)*60+%%c)
+for /F "tokens=1-4 delims=:.," %%a in ("%END_TIME%") do set /A END_SEC=(((%%a*60)+%%b)*60+%%c)
+set /A DURATION=%END_SEC%-%START_SEC%
+
+:: Obtener tamaño del archivo
+for %%A in ("%BACKUP_FILE%") do set SIZE=%%~zA
+
+:: Mensaje final
+echo ==============================================
+echo Estado: Respaldo Semanal Finalizado
+echo Tabla Respaldada: %TABLE_NAME%
+echo Semana del Año: %WEEK%
+echo Fecha de Término: %date% %END_TIME%
+echo Duración: %DURATION% segundos
+echo Tamaño del Archivo: %SIZE% bytes
+echo Ubicación del Archivo: %BACKUP_FILE%
+echo ==============================================
+
+:: Pausa para ver salida
+pause
