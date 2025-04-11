@@ -1,12 +1,28 @@
 # Backups Automáticos
 
-Contiene respaldos generados automáticamente mediante tareas programadas (cronjobs, scripts u orquestadores).
+Almacena copias de seguridad automáticas de la base de datos NoSQL, las cuales se generan de manera programada en intervalos predefinidos. Estas copias pueden ser completas, es decir, incluir toda la base de datos, o parciales, donde solo se respaldan datos o colecciones específicas, dependiendo de la configuración definida en el sistema. Este proceso asegura que los datos estén protegidos regularmente sin necesidad de intervención manual.
 
 Estos respaldos se realizan regularmente para garantizar que la información crítica de recursos humanos esté siempre protegida.
 
 Se organizan en:
 - `Full`: Copia completa de la base de datos.
 - `Partial`: Copia de colecciones específicas (ej. empleados, nómina).
+
+---
+
+## 📁 **Estructura de Archivos**
+**Proyecto Integrador Gym (Recursos Humanos)**
+```plaintext
+├── DBs
+│   ├── NoSQL
+│   │   ├── Backups
+│   │   │   ├── **Automated**
+│   │   │   ├── Manual
+├── Deliverables
+├── Docs
+├── Prototypes
+└── QA
+```
 
 ---
 
