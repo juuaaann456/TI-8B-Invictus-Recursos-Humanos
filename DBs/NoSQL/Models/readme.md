@@ -1,6 +1,6 @@
 # Modelos de Datos
 
-Aquí se encuentran los modelos de datos utilizados en el sistema de Recursos Humanos.
+Contiene los modelos de la base de datos NoSQL, que definen la estructura de las colecciones dentro de la base de datos. Cada modelo especifica las entidades que componen la colección, los campos que contienen, las validaciones que deben cumplir los datos y las relaciones entre diferentes colecciones. Estos modelos aseguran que los datos sean almacenados de manera consistente y válida, facilitando su gestión y uso en el sistema.
 
 Cada modelo representa una entidad del sistema, como:
 - Empleado
@@ -10,6 +10,26 @@ Cada modelo representa una entidad del sistema, como:
 - Asistencias
 
 Estos modelos sirven como referencia para la creación de documentos en la base de datos NoSQL.
+
+---
+
+## 📁 **Estructura de Archivos**
+**Proyecto Integrador Gym (Servicio al Cliente)**
+
+```plaintext
+├── DBs
+│   └── NoSQL
+│       ├── Backups
+│       ├── Diagrams
+│       ├── **Models**
+│       ├── Queries
+│       ├── Schemas
+│       └── Scripts
+├── Deliverables
+├── Docs
+├── Prototypes
+├── QA
+```
 
 ---
 
