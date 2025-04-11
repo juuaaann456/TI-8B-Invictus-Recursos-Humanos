@@ -1,6 +1,6 @@
 # Respaldos Manuales - SQL
 
-Este directorio agrupa los respaldos realizados manualmente por el equipo de administración de bases de datos.
+La carpeta **Manual** dentro de SQL/Backups/ contiene las copias de seguridad hechas manualmente por un usuario, en lugar de copias automáticas del sistema. Esto permite guardar respaldos específicos cuando el usuario lo decida.
 
 Son útiles antes de realizar:
 - Cambios estructurales importantes
@@ -10,6 +10,30 @@ Son útiles antes de realizar:
 Incluye:
 - Respaldos completos (`/Full`)
 - Respaldos parciales (`/Partial`)
+
+---
+
+## 📁 **Estructura de Archivos**
+**Proyecto Integrador Gym (Recursos Humanos)**
+
+```plaintext
+├── DBs
+│   ├── SQL
+│   │   ├── Backups
+│   │   │   ├── Automated
+│   │   │   └── **Manual**
+│   │   ├── DataDictionary
+│   │   ├── Diagrams
+│   │   ├── Events
+│   │   ├── Queries
+│   │   ├── Scripts
+│   │   └── Triggers
+│   └── NoSQL
+├── Deliverables
+├── Docs
+├── Prototype
+└── QA
+```
 
 ---
 
