@@ -1,6 +1,6 @@
 # Consultas (Queries) - SQL
 
-Incluye sentencias SQL para obtener información relevante del sistema de Recursos Humanos, como:
+La carpeta **Queries** contiene archivos relacionados con consultas a la base de datos. Aquí encontrarás scripts SQL que sirven para acceder, modificar o analizar datos, así como ejemplos y resultados esperados.
 
 - Empleados activos
 - Reportes de asistencia
@@ -8,6 +8,28 @@ Incluye sentencias SQL para obtener información relevante del sistema de Recurs
 - Estadísticas de desempeño
 
 Estas consultas son utilizadas tanto para análisis como para reportes administrativos.
+
+---
+
+## 📁 **Estructura de Archivos**
+**Proyecto Integrador Gym (Recursos Humanos)**
+
+```plaintext
+├── DBs
+│   ├── SQL
+│   │   ├── Backups
+│   │   ├── DataDictionary
+│   │   ├── Diagrams
+│   │   ├── Events
+│   │   ├── **Queries**
+│   │   ├── Scripts
+│   │   ├── Triggers
+│   └── NoSQL
+├── Deliverables
+├── Docs
+├── Prototype
+└── QA
+```
 
 ---
 
