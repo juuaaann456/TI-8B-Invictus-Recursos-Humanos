@@ -1,15 +1,29 @@
 # Diagramas - SQL
 
-Este directorio contiene los diagramas relacionales que representan la estructura de la base de datos SQL del módulo de Recursos Humanos.
+La carpeta **Diagrams** almacena diagramas que muestran la estructura y el diseño de la base de datos, ayudando a visualizar fácilmente las tablas, sus atributos y cómo se relacionan entre sí.
 
-Incluye:
-- Diagramas Entidad-Relación (ERD)
-- Diagramas lógicos de base de datos
+## 📁 **Estructura de Archivos**
+**Proyecto Integrador Gym (Recursos Humanos)**
 
-Estos recursos ayudan a comprender cómo se relacionan las tablas y cómo fluye la información dentro del sistema.
-
----
-
+```plaintext
+├── DBs
+│   ├── **SQL**
+│   │   ├── Backups
+│   │   ├── DataDictionary
+│   │   ├── **Diagrams**
+│   │   │   ├── MER
+│   │   │   ├── MERE
+│   │   │   └── MR
+│   │   ├── Events
+│   │   ├── Queries
+│   │   ├── Scripts
+│   │   └── Triggers
+│   └── NoSQL
+├── Deliverables
+├── Docs
+├── Prototype
+└── QA
+```
 ## 👥 *Equipo de Desarrollo*
 
 | Integrantes                   | Contacto                                                   | Rol                      | Observaciones |
