@@ -1,5 +1,7 @@
 # Respaldos Parciales Automatizados - SQL
 
+La carpeta **Partial** en SQL contiene respaldos parciales, es decir, copias solo de partes específicas de la base de datos. Es útil cuando la base de datos es muy grande y hacer un respaldo completo tomaría demasiado tiempo o espacio.
+
 Contiene respaldos programados de tablas específicas del sistema de Recursos Humanos, tales como:
 
 - Empleados
@@ -8,6 +10,33 @@ Contiene respaldos programados de tablas específicas del sistema de Recursos Hu
 - Contratos
 
 Estos respaldos se ejecutan automáticamente con mayor frecuencia para minimizar pérdida de datos sensibles sin ocupar tanto espacio.
+
+---
+
+
+## 📁 **Estructura de Archivos**
+**Proyecto Integrador Gym (Recursos Humanos)**
+
+```plaintext
+├── DBs
+│   ├── **SQL**
+│   │   ├── **Backups**
+│   │   │   ├── **Automated**
+│   │   │   │   ├── Full
+│   │   │   │   └── **Partial**
+│   │   │   └── Manual
+│   │   ├── DataDictionary
+│   │   ├── Diagrams
+│   │   ├── Events
+│   │   ├── Queries
+│   │   ├── Scripts
+│   │   └── Triggers
+│   └── NoSQL
+├── Deliverables
+├── Docs
+├── Prototype
+└── QA
+```
 
 ---
 
