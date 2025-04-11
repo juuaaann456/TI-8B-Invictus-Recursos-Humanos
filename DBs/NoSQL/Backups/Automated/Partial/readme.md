@@ -1,6 +1,6 @@
 # Respaldos Parciales Automatizados
 
-Este directorio contiene respaldos parciales generados automáticamente del módulo de Recursos Humanos.
+Contiene respaldos manuales parciales de la base de datos NoSQL, los cuales son realizados por el usuario según sea necesario. Estos respaldos no incluyen toda la base de datos, sino solo las colecciones o los datos específicos que el usuario selecciona para proteger o almacenar. Este tipo de copia es útil cuando se desea realizar un respaldo más rápido o cuando solo se necesita preservar una parte concreta de la información en lugar de toda la base de datos.
 
 Incluye copias de seguridad de colecciones clave como:
 - Empleados
@@ -9,6 +9,24 @@ Incluye copias de seguridad de colecciones clave como:
 - Contratos
 
 Estos respaldos se generan de forma periódica mediante scripts automatizados, permitiendo una restauración rápida y específica en caso de errores o pérdidas de datos puntuales.
+
+---
+
+## 📁 **Estructura de Archivos**
+**Proyecto Integrador Gym (Recursos Humanos)**
+```plaintext
+├── DBs
+│   ├── NoSQL
+│   │   ├── Backups
+│   │   │   ├── Automated
+│   │   │   │   ├── Full
+│   │   │   │   ├── **Partial**
+│   │   │   ├── Manual
+├── Deliverables
+├── Docs
+├── Prototypes
+└── QA
+```
 
 ---
 
