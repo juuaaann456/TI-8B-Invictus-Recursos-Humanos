@@ -1,6 +1,6 @@
 # Diccionario de Datos - SQL
 
-Contiene el diccionario de datos con detalles de las tablas utilizadas en la implementación SQL del módulo de Recursos Humanos.
+La carpeta **DataDictionary** contiene documentos que describen claramente la estructura y características de las tablas, columnas y relaciones en la base de datos del sistema. Sirve como referencia rápida para entender fácilmente cómo está organizada la información del sistema.
 
 Documentación incluida:
 - Nombre de las tablas
@@ -9,6 +9,28 @@ Documentación incluida:
 - Reglas de integridad
 
 Es útil para mantener la trazabilidad y facilitar el mantenimiento de la base de datos.
+
+---
+
+## 📁 **Estructura de Archivos**
+**Proyecto Integrador Gym (Recursos Humanos)**
+
+```plaintext
+├── DBs
+│   ├── **SQL**
+│   │   ├── Backups
+│   │   ├── **DataDictionary**
+│   │   ├── Diagrams
+│   │   ├── Events
+│   │   ├── Queries
+│   │   ├── Scripts
+│   │   └── Triggers
+│   └── NoSQL
+├── Deliverables
+├── Docs
+├── Prototype
+└── QA
+```
 
 ---
 
