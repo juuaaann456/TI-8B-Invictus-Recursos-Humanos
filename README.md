@@ -88,7 +88,7 @@ Desarrollar e implementar un módulo integral de gestión de personal para Gym B
 
 ### Diagrama WBS
 
-![Uploading Site Map Team Whiteboard in Purple Blue Green Friendly Professional Style.jpg…]()
+![Site Map Team Whiteboard in Purple Blue Green Friendly Professional Style](https://github.com/user-attachments/assets/2949208c-2579-4da7-9546-0c3558c8a289)
 
 
 ---
