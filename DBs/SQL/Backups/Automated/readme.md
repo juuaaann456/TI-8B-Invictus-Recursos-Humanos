@@ -9,7 +9,7 @@ Incluye:
 ---
 
 ## 📁 **Estructura de Archivos**
-**Proyecto Integrador Gym (Servicio al Cliente)**
+**Proyecto Integrador Gym (Recursos Humanos)**
 
 ```plaintext
 ├── DBs
