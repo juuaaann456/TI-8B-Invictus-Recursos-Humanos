@@ -1,6 +1,6 @@
 # Scripts
 
-Este directorio contiene scripts auxiliares utilizados para automatizar tareas relacionadas con el módulo de Recursos Humanos.
+La carpeta **Scripts** contiene archivos para gestionar la base de datos, incluyendo migraciones, inicialización de datos y tareas programadas, facilitando su administración.
 
 Incluye scripts para:
 - Poblar colecciones con datos de prueba.
@@ -9,6 +9,26 @@ Incluye scripts para:
 - Automatización de rutinas administrativas.
 
 Los scripts están pensados para desarrolladores y administradores del sistema.
+
+---
+
+## 📁 **Estructura de Archivos** 
+**Proyecto Integrador Gym (Recursos Humanos)**
+
+```plaintext
+├── DBs
+│   └── NoSQL
+│       ├── Backups
+│       ├── Diagrams
+│       ├── Models
+│       ├── Queries
+│       ├── Schemas
+│       └── **Scripts**
+├── Deliverables
+├── Docs
+├── Prototypes
+├── QA
+```
 
 ---
 
