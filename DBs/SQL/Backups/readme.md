@@ -1,12 +1,34 @@
 # Backups - SQL
 
-Contiene respaldos de la base de datos en formato SQL del módulo de Recursos Humanos.
+La carpeta **Backups** dentro de SQL/ almacena copias de seguridad de las bases de datos SQL. Estas copias permiten recuperar la información si ocurre algún fallo, pérdida de datos o durante migraciones.
 
 Estos respaldos pueden ser:
 - **Completos**: Dump de toda la base de datos relacionada.
 - **Parciales**: Incluyen únicamente tablas específicas (empleados, asistencia, etc.).
 
 Los archivos permiten restaurar rápidamente el sistema en caso de fallos o migraciones.
+
+---
+
+## 📁 **Estructura de Archivos**
+**Proyecto Integrador Gym (Recursos Humanos)**
+
+```plaintext
+├── DBs
+│   ├── **SQL**
+│   │   ├── **Backups**
+│   │   ├── DataDictionary
+│   │   ├── Diagrams
+│   │   ├── Events
+│   │   ├── Queries
+│   │   ├── Scripts
+│   │   └── Triggers
+│   └── NoSQL
+├── Deliverables
+├── Docs
+├── Prototype
+└── QA
+```
 
 ---
 
