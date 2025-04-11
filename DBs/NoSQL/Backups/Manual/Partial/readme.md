@@ -1,6 +1,6 @@
 # Respaldos Parciales Manuales
 
-Contiene respaldos parciales realizados manualmente por el personal autorizado.
+Contiene respaldos parciales realizados manualmente por el personal autorizado. Estos respaldos no incluyen toda la base de datos, sino solo las colecciones o los datos específicos que el usuario selecciona para proteger o almacenar. Este tipo de copia es útil cuando se desea realizar un respaldo más rápido o cuando solo se necesita preservar una parte concreta de la información en lugar de toda la base de datos.
 
 Estos respaldos son útiles antes de realizar cambios específicos en colecciones concretas como:
 - Cambios masivos en registros de empleados
@@ -8,6 +8,24 @@ Estos respaldos son útiles antes de realizar cambios específicos en coleccione
 - Actualización de políticas de asistencia
 
 Se recomienda registrar cada respaldo con fecha y motivo.
+
+---
+
+## 📁 **Estructura de Archivos**
+**Proyecto Integrador Gym (Recursos Humanos)**
+```plaintext
+├── DBs
+│   ├── NoSQL
+│   │   ├── Backups
+│   │   │   ├── Automated
+│   │   │   ├── Manual
+│   │   │   │   ├── Full
+│   │   │   │   ├── **Partial**
+├── Deliverables
+├── Docs
+├── Prototypes
+└── QA
+```
 
 ---
 
