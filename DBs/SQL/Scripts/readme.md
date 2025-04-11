@@ -1,6 +1,6 @@
 # Scripts - SQL
 
-Contiene scripts SQL para automatizar tareas como:
+La carpeta **Scripts** contiene archivos para realizar tareas específicas en la base de datos o en el sistema, como crear estructuras, migrar información o automatizar procesos. Estos archivos pueden ser scripts escritos en SQL, Python, Bash, u otros lenguajes, facilitando la administración eficiente del sistema.
 
 - Creación de tablas
 - Inserción masiva de datos
@@ -8,6 +8,32 @@ Contiene scripts SQL para automatizar tareas como:
 - Limpieza de datos
 
 Facilita el despliegue, mantenimiento y migración del sistema.
+
+---
+
+## 📁 **Estructura de Archivos**
+**Proyecto Integrador Gym (Recursos Humanos)**
+
+```plaintext
+├── DBs
+│   ├── **SQL**
+│   │   ├── Backups
+│   │   ├── DataDictionary
+│   │   ├── Diagrams
+│   │   ├── Events
+│   │   ├── Queries
+│   │   ├── **Scripts**
+│   │   │   ├── Creation
+│   │   │   ├── Functions
+│   │   │   ├── Poblate
+│   │   │   └── USPs
+│   │   └── Triggers
+│   └── NoSQL
+├── Deliverables
+├── Docs
+├── Prototype
+└── QA
+```
 
 ---
 
