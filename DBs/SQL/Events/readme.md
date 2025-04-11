@@ -1,6 +1,6 @@
 # Eventos - SQL
 
-Contiene eventos programados que automatizan tareas en la base de datos del sistema de Recursos Humanos.
+La carpeta **Events** contiene archivos relacionados con eventos programados en la base de datos. Estos eventos automatizan tareas como actualizar datos, ejecutar scripts o generar informes periódicos. Esta carpeta ayuda a gestionar fácilmente estas tareas repetitivas en el sistema.
 
 Ejemplos comunes:
 - Generación de reportes semanales de asistencia
@@ -8,6 +8,28 @@ Ejemplos comunes:
 - Notificaciones por contratos por vencer
 
 Los eventos permiten programar acciones recurrentes sin intervención manual.
+
+---
+
+## 📁 **Estructura de Archivos**
+**Proyecto Integrador Gym (Recursos Humanos)**
+
+```plaintext
+├── DBs
+│   ├── **SQL**
+│   │   ├── Backups
+│   │   ├── DataDictionary
+│   │   ├── Diagrams
+│   │   ├── **Events**
+│   │   ├── Queries
+│   │   ├── Scripts
+│   │   ├── Triggers
+│   └── NoSQL
+├── Deliverables
+├── Docs
+├── Prototype
+└── QA
+```
 
 ---
 
