@@ -14,6 +14,26 @@ Los respaldos aseguran la integridad y disponibilidad de la información en caso
 
 ---
 
+## 📁 **Estructura de Archivos**
+**Proyecto Integrador Gym (Recursos Humanos)**
+```plaintext
+├── DBs
+│   ├── NoSQL
+│   │   ├── **Backups**
+│   │   │   ├── Automated
+│   │   │   ├── Manual
+├── Diagrams
+├── Models
+├── Queries
+├── Schemas
+├── Scripts
+├── Deliverables
+├── Docs
+├── Prototypes
+└── QA
+
+---
+
 ## 👥 *Equipo de Desarrollo*
 
 | Integrantes                   | Contacto                                                   | Rol                      | Observaciones |
