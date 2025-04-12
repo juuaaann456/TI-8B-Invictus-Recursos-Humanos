@@ -1,43 +1,36 @@
-## 🎯 Consulta 1: Áreas activas registradas recientemente
+## 📘 Consultas avanzadas - Colección: contactos
 
-**Tabla:** `tbb_areas`  
-**Descripción:** Obtiene las áreas registradas en los últimos 30 días que están activas, mostrando su nombre, descripción y fecha de creación.
+### 🟦 Consulta 1: Buscar mensajes que mencionen "yoga"
+
+**Descripción:** Encuentra todos los mensajes donde el comentario contenga la palabra "yoga", sin importar mayúsculas o minúsculas.
 
 **Consulta:**
-```sql
-SELECT id_area, nombre, descripcion, sucursal_ID, Estatus, fecha_registro
-FROM tbb_areas
-WHERE estado = 'activo'
-  AND fecha_creacion >= CURRENT_DATE - INTERVAL 30 DAY
-ORDER BY fecha_creacion DESC;
+```javascript
+db.contactos.find({
+  comentario: { $regex: "yoga", $options: "i" }
+});
+
 
 ---
 
-## 🎯 Consulta 2: Colaboradores activos con su puesto
+### consulta 2 
 
-**Tabla:** `tbb_colaboradores`  
-**Descripción:** Muestra una lista de colaboradores activos junto con su puesto, ordenados por fecha de ingreso más reciente.
+db.contactos.find({
+  fecha_registro: {
+    $gte: new Date(new Date().setDate(new Date().getDate() - 7))
+  }
+});
 
-**Consulta:**
-```sql
-SELECT c.id_colaborador, p.nombre, p.apellido_paterno, c.puesto, c.fecha_ingreso
-FROM tbb_colaboradores c
-JOIN tbb_personas p ON c.persona_id = p.id
-WHERE c.estado = 'activo'
-ORDER BY c.fecha_ingreso DESC;
+----
 
----
+### consulta 3
 
-## 🎯 Consulta 3: Horarios por colaborador para un día específico
-
-**Tabla:** `tbb_horarios`  
-**Descripción:** Muestra los horarios programados para cada colaborador en una fecha específica.
-
-**Consulta:**
-```sql
-SELECT h.colaborador_id, p.nombre, h.fecha, h.hora_inicio, h.hora_fin
-FROM tbb_horarios h
-JOIN tbb_colaboradores c ON h.colaborador_id = c.id_colaborador
-JOIN tbb_personas p ON c.persona_id = p.id
-WHERE h.fecha = '2025-04-11'
-ORDER BY h.hora_inicio;
+db.contactos.aggregate([
+  {
+    $group: {
+      _id: { $dateToString: { format: "%Y-%m-%d", date: "$fecha_registro" } },
+      total_mensajes: { $sum: 1 }
+    }
+  },
+  { $sort: { _id: -1 } }
+]);
